@@ -1,0 +1,806 @@
+html,
+body,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+form,
+input,
+div {
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #171717;
+}
+
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
+
+/* tiffany amelia */
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 100px 20px;
+  margin: 0 auto;
+}
+
+.header {
+  position: fixed;
+  background-color: rgb(222, 219, 217);
+  color: rgb(54, 54, 54);
+  height: 80px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  z-index: 50;
+}
+
+.header-logo {
+  font-family: "Pacifico", cursive;
+  font-style: normal;
+  letter-spacing: 3px;
+  font-size: 20px;
+  font-weight: bold;
+  float: left;
+  padding: 30px 0;
+  cursor: pointer;
+}
+
+#menu {
+  padding-top: 12px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  float: right;
+}
+
+#menu a {
+  color: black;
+  display: inline-block;
+  cursor: pointer;
+  padding: 25px;
+  height: 100%;
+  transition: 0.3s ease-in-out;
+}
+
+#menu a:hover {
+  color: white;
+  background-color: rgb(54, 54, 54);
+  border-radius: 5px;
+}
+
+.top-wrapper {
+  padding: 180px 0 100px 0;
+  color: rgb(48, 48, 48);
+  background-image: url(humphrey-muleba-dDp-6pXrYik-unsplash.jpg);
+  background-size: cover;
+  text-align: left;
+  width: 100%;
+}
+
+.top-wrapper h1 {
+  font-size: 45px;
+  padding: 10px 0px;
+  margin: 0 auto;
+  color: rgb(54, 54, 54);
+}
+
+.top-wrapper p {
+  margin-bottom: 0px;
+  color: rgb(54, 54, 54);
+  letter-spacing: 2px;
+}
+
+.btn {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.registered {
+  background-color: rgb(109, 105, 105);
+}
+
+.registered {
+  text-decoration: none;
+}
+
+.btn-wrapper i {
+  margin-right: 8px;
+}
+
+.btn-wrapper {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.fa {
+  margin-right: 5px;
+}
+.menu-icon {
+  color: rgb(222, 219, 217);
+  float: right;
+  width: 0;
+  height: 0;
+}
+
+/*tifany amelia*/
+
+/*konten 1*/
+.style-wrapper {
+  padding-bottom: 80px;
+}
+.container-2 {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.heading {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  color: #5f5d60;
+}
+
+.heading h2 {
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+}
+
+.news {
+  float: left;
+  width: 30%;
+}
+.tengah {
+  margin: 0 3%;
+}
+.news-icon img {
+  width: 80%;
+  height: 175px;
+  padding-bottom: 20px;
+}
+.newses {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.news-icon p {
+  font-weight: bold;
+  font-size: 17px;
+  text-align: center;
+}
+.txt-contents {
+  width: 80%;
+  margin: 0 auto;
+  display: inline-block;
+}
+.txt-wrapper {
+  width: 100%;
+  height: 600px;
+  background-image: url(https://images.unsplash.com/photo-1461896836934-ffe607ba8211?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+  background-size: cover;
+  color: white;
+}
+.text-1 {
+  width: 500px;
+  padding: 50px 0;
+  display: inline-block;
+}
+.text-1 h1 {
+  margin-bottom: 5px;
+}
+.text-1 span {
+  list-style: none;
+  background-color: white;
+  line-height: 36px;
+}
+.gambar {
+  padding: 50px 0px;
+  float: right;
+  display: inline-block;
+}
+.gambar img {
+  width: 350px;
+}
+/*konten 1*/
+
+/*konten 2*/
+/* start css conten */
+.content {
+  background-color: #fff;
+  width: 100%;
+  overflow: hidden;
+}
+.content .container {
+  display: flex;
+  align-items: center;
+  padding: 100px 0;
+  margin: 0 10%;
+}
+.content__menu {
+  list-style: none;
+  width: 50%;
+}
+.menu__item {
+  border-top: 1px solid grey;
+  padding: 30px;
+  text-align: right;
+  cursor: pointer;
+}
+.menu__item:hover {
+  box-shadow: 8px 0px 0px rgb(222, 219, 217);
+  border: 1px solid grey;
+  color: #ffbea5;
+}
+/* digunakan ketika css active */
+.active {
+  box-shadow: 8px 0px 0px rgb(222, 219, 217);
+  color: #ffbea5;
+}
+
+.menu__link {
+  opacity: 1.59px;
+  font-size: 14px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  color: #171717;
+}
+.menu__link:hover {
+  color: #ffbea5;
+}
+.text__content {
+  padding-left: 30px;
+  width: 100%;
+  font-family: "Quicksand", sans-serif;
+}
+.barbel {
+  width: 30%;
+  height: 30%;
+  padding-bottom: 20px;
+}
+.judul {
+  font-size: 36px;
+  color: #3c3c3c;
+}
+.text__deskripsi {
+  padding-top: 20px;
+  text-align: justify;
+  font-size: 17px;
+  color: #9e9e9e;
+  line-height: 25px;
+}
+.poin {
+  display: flex;
+  color: #9e9e9e;
+}
+.text__content ul {
+  padding-left: 20px;
+}
+.text__content ul li {
+  padding: 10px;
+  font-size: 16px;
+  background-size: cover;
+}
+
+/* end css content */
+
+/* choice */
+.choice {
+  background-color: #dadada;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 80px;
+}
+.choice .container {
+  width: 100%;
+  margin: 0 auto;
+}
+.choice .judul-lesson {
+  padding-bottom: 30px;
+  color: #5f5d60;
+}
+.judul-choice h6 {
+  color: #3c3c3c;
+  font-weight: normal;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+.judul-choice h1 {
+  font-size: 60px;
+  color: #3c3c3c;
+  font-family: "Quicksand", sans-serif;
+  letter-spacing: 2px;
+  padding-bottom: 40px;
+  font-weight: bold;
+}
+.lessons {
+  width: 100%;
+}
+.lesson {
+  float: left;
+  width: 25%;
+}
+.img-lesson {
+  width: 90%;
+  height: 200px;
+}
+.lesson-ikon {
+  position: relative;
+}
+
+/*konten 2*/
+
+/*konten 3*/
+.class-timetable h1 {
+  font-family: Quicksand, sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1em;
+  letter-spacing: 1.5px;
+  color: #3c3c3c;
+}
+.class-timetable {
+  text-align: center;
+  padding: 50px 0;
+  color: #3c3c3c;
+}
+
+.class-timetable h6 {
+  font-size: 14px;
+  line-height: 1.14em;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+}
+
+.class-timetable a {
+  font-weight: 400;
+  width: 150px;
+  opacity: 0.9;
+  padding: 10px 0px;
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 25px;
+}
+
+.event {
+  margin: 25px 0;
+  background-color: rgb(222, 219, 217);
+  color: rgb(54, 54, 54);
+  opacity: 1;
+}
+
+.class-timetable a:hover {
+  background-color: rgb(222, 219, 217);
+  color: rgb(54, 54, 54);
+  opacity: 1;
+}
+
+table {
+  font-family: "Quicksand" !important;
+  margin-top: 10px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.schedule p {
+  opacity: 0.7;
+}
+
+table,
+th,
+td {
+  padding: 25px;
+  width: 1150px;
+  border: 1px solid #e1e1e1;
+  border-collapse: collapse;
+}
+
+.yoga {
+  color: #ffbea5;
+}
+
+.zumba {
+  color: #4fbf70;
+}
+.balance {
+  color: #54c8cf;
+}
+
+.about-us {
+  background-image: url(https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1075&q=80);
+  background-size: cover;
+  text-align: center;
+}
+.about-us {
+  color: goldenrod;
+}
+
+.about-us h1 {
+  padding: 30px 0;
+  color: #e1e1e1;
+}
+.our-story {
+  padding: 0 100px;
+  background-color: rgba(120, 189, 132, 0.6);
+}
+
+.our-story h2 {
+  color: gold;
+  font-size: 50px;
+  padding-top: 30px;
+}
+
+.our-story p {
+  color: whitesmoke;
+  margin: 0 auto;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+footer {
+  background-color: rgb(222, 219, 217);
+  height: 80px;
+  font-family: "Pacifico", cursive;
+  font-style: normal;
+  letter-spacing: 3px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 80px;
+  cursor: pointer;
+}
+footer span {
+  font-size: 4px;
+}
+
+/*konten 3*/
+
+/*Muhammad fadhli*/
+@media (max-width: 1000px) {
+  .container {
+    padding: 150px 30px;
+  }
+  .header-logo {
+    font-size: 15px;
+  }
+  .menu {
+    font-size: 15px;
+  }
+  .menu-icon {
+    display: none;
+  }
+  .news-icon img {
+    width: 100%;
+    height: 150px;
+  }
+  .txt-contents {
+    font-size: 15px;
+  }
+  .content .container {
+    display: block;
+    margin: 0;
+  }
+  .content__menu {
+    width: 100%;
+    display: flex;
+  }
+  .menu__item {
+    padding: 20px;
+    text-align: left;
+    border-bottom: 1px solid gray;
+  }
+  .menu__item:hover {
+    background-color: #ffbea2;
+  }
+  /* digunakan ketika css active */
+  .active {
+    background-color: #ffbea2;
+  }
+  .menu__link {
+    font-size: 12px;
+  }
+  .barbel {
+    width: 25%;
+    height: 25%;
+    padding-left: 80px;
+  }
+  .judul {
+    font-size: 28px;
+    padding-top: 20px;
+  }
+  .text__deskripsi {
+    font-size: 14px;
+    width: 100%;
+  }
+  .text__content ul {
+    padding-left: 10px;
+  }
+  .text__content ul li {
+    padding: 7px;
+    font-size: 12px;
+    background-size: cover;
+  }
+  .judul-choice h6 {
+    padding-top: 10px;
+    margin: 0px 0px 7px;
+    letter-spacing: 2px;
+    font-size: 15px;
+  }
+  .judul-choice h1 {
+    font-size: 50px;
+    padding-bottom: 28px;
+  }
+  .lessons {
+    width: 100%;
+  }
+  .lesson {
+    float: left;
+    width: 50%;
+  }
+  .img-lesson {
+    width: 80%;
+    height: 200px;
+    padding-bottom: 20px;
+  }
+  .class-timetable h1 {
+    font-size: 45px;
+    line-height: 0.7em;
+    letter-spacing: 1px;
+  }
+  .class-timetable {
+    padding: 40px 0;
+    color: #3c3c3c;
+  }
+
+  .class-timetable h6 {
+    font-size: 12px;
+    line-height: 1.1em;
+  }
+
+  .class-timetable a {
+    width: 120px;
+    opacity: 0.9;
+    padding: 8px 0px;
+    margin-right: 20px;
+  }
+
+  .event {
+    margin: 20px 0;
+  }
+
+  .schedule table {
+    margin-top: 8px;
+    width: 80%;
+  }
+  table,
+  th,
+  td {
+    width: 500px;
+    padding: 20px;
+  }
+
+  .gambar {
+    display: none;
+  }
+  .about-us h1 {
+    padding: 20px 0;
+  }
+  .our-story {
+    padding: 0 70px;
+  }
+
+  .our-story h2 {
+    font-size: 30px;
+  }
+  .our-story p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 670px) {
+  .container {
+    padding: 150px 10px;
+  }
+  .menu {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+    color: black;
+    float: right;
+    width: 20px;
+    padding: 30px;
+  }
+  .top-wrapper h1 {
+    font-size: 35px;
+    padding-bottom: 20px;
+  }
+
+  .top-wrapper p {
+    margin-bottom: 15px;
+    letter-spacing: 0;
+    font-size: 15px;
+  }
+  .news {
+    width: 100%;
+    padding-bottom: 15px;
+  }
+  .news-icon img {
+    width: 70%;
+    height: 160px;
+    margin-top: 50px;
+  }
+  .txt-contents {
+    font-size: 12px;
+  }
+  .text-1 {
+    width: 100%;
+  }
+  .gambar {
+    display: none;
+  }
+  .text p {
+    font-size: 12px;
+  }
+
+  .content__menu {
+    width: 100%;
+    display: flex;
+  }
+  .menu__item {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 0.5px solid gray;
+  }
+  .menu__item:hover {
+    background-color: #ffbea2;
+  }
+  /* digunakan ketika css active */
+  .active {
+    background-color: #ffbea2;
+  }
+  .menu__link {
+    font-size: 10px;
+  }
+  .barbel {
+    display: none;
+  }
+  .judul {
+    font-size: 20px;
+    padding-top: 15px;
+  }
+  .text__deskripsi {
+    font-size: 10px;
+    width: 100%;
+  }
+  .text__content ul {
+    padding-left: 10px;
+  }
+  .text__content ul li {
+    padding: 5px;
+    font-size: 10px;
+    background-size: cover;
+  }
+  .judul-choice h6 {
+    padding-top: 10px;
+    margin: 0px 0px 7px;
+    letter-spacing: 2px;
+    font-size: 12px;
+  }
+  .judul-choice h1 {
+    font-size: 35px;
+    padding-bottom: 20px;
+  }
+  .lessons {
+    width: 100%;
+  }
+  .lesson {
+    float: left;
+    width: 100%;
+  }
+  .img-lesson {
+    width: 60%;
+    height: 250px;
+    padding-bottom: 20px;
+  }
+  .class-timetable h1 {
+    font-size: 30px;
+    line-height: 0.7em;
+    letter-spacing: 1px;
+  }
+  .class-timetable {
+    padding: 20px 0;
+    color: #3c3c3c;
+  }
+
+  .class-timetable h6 {
+    font-size: 10px;
+    line-height: 1.1em;
+  }
+
+  .class-timetable a {
+    width: 100px;
+    opacity: 0.9;
+    padding: 4px 0px;
+    margin-right: 0;
+  }
+
+  .event {
+    margin: 15px 0;
+  }
+
+  .schedule table {
+    margin-top: 5px;
+    width: 100%;
+  }
+  table,
+  th,
+  td {
+    width: 150px;
+    padding: 18px;
+  }
+  .about-us {
+    text-align: left;
+  }
+  .about-us h1 {
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .our-story h2 {
+    font-size: 20px;
+  }
+  .our-story p {
+    font-size: 12px;
+  }
+  footer {
+    background-color: rgb(222, 219, 217);
+    height: 80px;
+    font-family: "Pacifico", cursive;
+    font-style: normal;
+    text-align: center;
+  }
+  footer span {
+    display: none;
+  }
+}
+/*Muhammad fahdli*/
